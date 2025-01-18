@@ -1,0 +1,227 @@
+/*CSS plus général sur le site Internet, contenant les bases du site (fond, navigation...)*/
+
+body{ /* Permet de changer la couleur du texte, du fond, la police sur l'intégralité du site */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    background-color: whitesmoke;
+    color: #5FC2BA;
+    margin: 0 auto;
+}
+
+input[type="search"]{
+    width: 200px;
+    height: 20px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+nav{
+    background-color: transparent;
+}
+
+ul li{
+    display:inline-flex;
+    padding:20px;
+    font-size : 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #5FC2BA;
+} 
+
+nav li:hover{
+    text-decoration: none;
+    background-color: #0B162C;
+}
+
+.actif{
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: white;
+}
+
+#themeChanger{
+    padding: 15px;
+    border-radius: 40px;
+    margin: 20px;
+}
+
+
+/* Trois classes d'images, l'une pour les affiches d'animés, l'une pour le logo et la dernière pour les icones en pied de page */ 
+
+.affiche{
+    width:200px;
+    padding : 20px;
+    transition-duration: 150ms;
+}
+
+.affiche:hover{
+    transform: scale(1.1);
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.icone:hover{
+    transform: scale(1.1);
+}
+
+.logo{
+    width: 100px;
+}
+
+.icone{
+    height:40px;
+}
+
+/*CSS du haut de page*/
+
+header{
+    background-color: #1C2942;
+    padding:20px;
+    display:flex;
+    word-spacing: 5px;
+    flex-wrap:wrap;
+}
+
+/*CSS du pied de page*/
+
+footer{
+    background-color: #1C2942;
+    text-align: center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+section{
+    margin:20px;
+    padding:10px;
+}
+
+h1{
+    margin : 5px;
+    width:100vw;
+}
+
+h2{
+    margin-left: 20px;
+    color: black;
+}
+
+h3, h4{
+    color: black;
+}
+
+.ancre{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    position: fixed;
+    right: 20px;
+    bottom: 120px;
+}
+
+p{
+    color: #1C2942;
+}
+
+/*CSS corrrespondant aux parties du site sur les animés, se trouvant dans le dossier Anime */
+.comment{ /* Représente les commentaires de la communauté*/
+    background-color: rgb(216, 216, 216);
+    color: #1C2942;
+    padding: 20px;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 6px;
+}
+
+.description { /* Représente les informations essentielles sur un animé, mises sur la gauche*/
+    width:12vw;
+    display: flex; 
+    flex-flow: column wrap; 
+    flex-wrap:wrap;
+    float:left; 
+    background-color: rgb(216, 216, 216);
+    border : 2px solid #1C2942;
+    padding: 10px;
+    margin: 20px;
+}
+
+.img{
+    width:200px;
+}
+@media screen and (max-width:1500px) {
+    .img {
+        width: 90%;
+    }
+}
+.parent{
+    display:flex;
+}
+
+.personnage{ 
+    height: 150px;
+    border-radius: 100px;
+    display: inline;
+    margin: 10px;
+}
+
+iframe{
+    width: 560px;
+    height: 315px;
+}
+
+/*CSS contenant la connexion, l'inscription ou encore le formulaire*/
+.form {
+    border: 0;
+    box-shadow: 0 0 3px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    color: #1C2942;
+    width: 400px;
+    margin: 20px auto;
+}
+
+form {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+input {
+    padding: 5px;
+    outline: 0;
+    border: 1px solid rgba(0,0,0,0.4);
+}
+
+input:focus {
+    border: 2px solid #5FC2BA;
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    background-color: rgb(216, 216, 216);
+    color: #1C2942;
+    cursor: pointer;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: white;
+    height: 30px;
+}
+
+hr{
+    margin : 10px;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

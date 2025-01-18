@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!--Page concernant le formulaire du site-->
+<html lang="fr">
+
+    <head>
+        <title> Formulaire - Anime CentralHub </title> <!--Titre de la page en haut de l'onglet-->
+        <meta charset="UTF-8"> 
+        <meta name="description" content="Une réclamation ? Une question ? Une idée ? Remplit ce formulaire et aide Anime CentralHub à s'améliorer de jour en jour !">
+        <link id="theme" href="css/darkstyle.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="IMG/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="IMG/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="IMG/favicon-16x16.png">
+        <link rel="manifest" href="IMG/site.webmanifest">
+    </head>
+
+
+    <body>
+
+        <header>    <h1> Anime CentralHub</h1>
+            <a href="/"><img class="logo" alt="Logo site" src="IMG/logo.png"></a>
+            <input type="search" placeholder="Rechercher">
+            <nav> <!-- Barre de navigation -->
+                <ul>
+                    <li><a href="/"> Anime </a></li> 
+                    <li class="actif"><a href="formulaire.html"> Formulaire </a></li> 
+                    <li><a href="connexion.html">Se connecter</a></li>
+                    <li><a href="apropos.html"> A Propos</a></li>  
+                </ul>
+            </nav>
+            <button id="themeChanger"> Changer mode </button> <!--Bouton permettant de changer la couleur du site-->
+        </header>
+
+        <section class="form"> <h2>Donner votre avis !</h2>
+            <hr>
+            <form action="mailto:estelle.grimaudamu@gmail.com" method="post">
+                <label for="username">Pseudo</label>
+                <input id="username" type="text" name="username" required="required">
+                <label for="avis">Commentaire</label>
+                <textarea id="avis" name="impression" placeholder="Une idée d'amélioration ? Un avis ? Une remarque ?" rows="10" cols="200"></textarea>
+
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+
+        <footer>
+            <h1>Nous contacter </h1> <!-- Pied de page, contenant les différents réseaux sociaux du site -->
+            <a href="https://discord.gg/4cNfmRY7ah"><img class="icone" alt="Logo Discord" src="IMG/discord.png"></a> <!--Serveur Discord du site-->
+            <a href="https://github.com/CyrilFT/Projet-Web"><img class="icone" alt="Logo github" src="IMG/github.png"></a>
+        </footer>
+
+        <script src="./themechanger.js"></script>
+
+    </body>
+
+</html>
